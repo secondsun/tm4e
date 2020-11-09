@@ -49,7 +49,7 @@ import dev.secondsun.tm4e.core.theme.ThemeTrieElementRule;
 /**
  * TextMate grammar implementation.
  *
- * @see https://github.com/Microsoft/vscode-textmate/blob/master/src/grammar.ts
+ * see https://github.com/Microsoft/vscode-textmate/blob/master/src/grammar.ts
  *
  */
 public class Grammar implements IGrammar, IRuleFactoryHelper {

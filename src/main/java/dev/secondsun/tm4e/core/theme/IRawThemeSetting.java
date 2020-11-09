@@ -14,7 +14,7 @@ package dev.secondsun.tm4e.core.theme;
 /**
  * A single theme setting.
  * 
- * @see https://github.com/Microsoft/vscode-textmate/blob/master/src/main.ts
+ * see https://github.com/Microsoft/vscode-textmate/blob/master/src/main.ts
  */
 public interface IRawThemeSetting {
 

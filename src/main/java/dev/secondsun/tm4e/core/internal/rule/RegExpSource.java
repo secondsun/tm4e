@@ -26,7 +26,7 @@ import dev.secondsun.tm4e.core.internal.oniguruma.IOnigCaptureIndex;
 
 /**
  *
- * @see https://github.com/Microsoft/vscode-textmate/blob/master/src/rule.ts
+ * see https://github.com/Microsoft/vscode-textmate/blob/master/src/rule.ts
  *
  */
 public class RegExpSource {

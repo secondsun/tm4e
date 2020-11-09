@@ -36,7 +36,7 @@ import dev.secondsun.tm4e.core.theme.Theme;
 /**
  * The registry that will hold all grammars.
  *
- * @see https://github.com/Microsoft/vscode-textmate/blob/master/src/main.ts
+ * see https://github.com/Microsoft/vscode-textmate/blob/master/src/main.ts
  *
  */
 public class Registry {

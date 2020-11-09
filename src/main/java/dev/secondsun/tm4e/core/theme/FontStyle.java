@@ -14,7 +14,7 @@ package dev.secondsun.tm4e.core.theme;
 /**
  * Font style definitions.
  *
- * @see https://github.com/Microsoft/vscode-textmate/blob/master/src/theme.ts
+ * see https://github.com/Microsoft/vscode-textmate/blob/master/src/theme.ts
  *
  */
 public class FontStyle {

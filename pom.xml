@@ -1,46 +1,46 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>dev.secondsun</groupId>
-  <artifactId>org.eclipse.tm4e.core</artifactId>
-  <packaging>jar</packaging>
-  <version>0.4.3-SNAPSHOT</version>
-  
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>dev.secondsun</groupId>
+	<artifactId>org.eclipse.tm4e.core</artifactId>
+	<packaging>jar</packaging>
+	<version>0.4.3-SNAPSHOT</version>
+
 	<properties>
 		<maven.compiler.source>15</maven.compiler.source>
 		<maven.compiler.target>15</maven.compiler.target>
 	</properties>
 	<licenses>
-        <license>
-            <name>Eclipse Public License v1.0</name>
-            <url>https://github.com/secondsun/tm4e/blob/master/LICENSE</url>
-        </license>
-    </licenses>
-    <developers>
-        <developer>
-            <name>Summers Pittman</name>
-            <email>secondsun@gmail.com</email>
-            <organization>MeMyselfAndI</organization>
-            <organizationUrl>https://github.com/secondsun</organizationUrl>
-        </developer>
-    </developers>
+		<license>
+			<name>Eclipse Public License v1.0</name>
+			<url>https://github.com/secondsun/tm4e/blob/master/LICENSE</url>
+		</license>
+	</licenses>
+	<developers>
+		<developer>
+			<name>Summers Pittman</name>
+			<email>secondsun@gmail.com</email>
+			<organization>MeMyselfAndI</organization>
+			<organizationUrl>https://github.com/secondsun</organizationUrl>
+		</developer>
+	</developers>
 	<distributionManagement>
 		<repository>
-		  <id>ossrh</id>
-		  <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
 		</repository>
 		<snapshotRepository>
-		  <id>ossrh</id>
-		  <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
 		</snapshotRepository>
-	  </distributionManagement>
-    <scm>
-        <connection>scm:git:git://github.com/secondsun/tm4e.git</connection>
+	</distributionManagement>
+	<scm>
+		<connection>scm:git:git://github.com/secondsun/tm4e.git</connection>
 		<developerConnection>scm:git:ssh://git@github.com/secondsun/tm4e.git</developerConnection>
-        <url>http://github.com/secondsun/tm4e/tree/prototype</url>
-      <tag>org.eclipse.tm4e.core-0.4.2</tag>
-  </scm>
+		<url>http://github.com/secondsun/tm4e/tree/prototype</url>
+		<tag>org.eclipse.tm4e.core-0.4.2</tag>
+	</scm>
 
-  <dependencies>
+	<dependencies>
 		<dependency>
 			<groupId>org.jruby.joni</groupId>
 			<artifactId>joni</artifactId>
@@ -75,16 +75,87 @@
 	</dependencies>
 	<build>
 		<pluginManagement>
-		  <plugins>
-			<plugin>
-			  <groupId>org.apache.maven.plugins</groupId>
-			  <artifactId>maven-compiler-plugin</artifactId>
-			  <version>3.8.1</version>
-			  <configuration>
-				<!-- put your configurations here -->
-			  </configuration>
-			</plugin>
-		  </plugins>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.8.1</version>
+					<configuration>
+						<!-- put your configurations here -->
+					</configuration>
+				</plugin>
+			</plugins>
 		</pluginManagement>
-	  </build>
+		<plugins>
+			<!-- Generate target/cp.txt so visualVmConfig() in extension.ts can read it -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<version>2.9</version>
+				<executions>
+					<execution>
+						<id>build-classpath</id>
+						<phase>generate-sources</phase>
+						<goals>
+							<goal>build-classpath</goal>
+						</goals>
+						<configuration>
+							<outputFile>${project.build.directory}/cp.txt</outputFile>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<version>3.0.1</version>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<goals>
+							<goal>jar-no-fork</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.sonatype.plugins</groupId>
+				<artifactId>nexus-staging-maven-plugin</artifactId>
+				<version>1.6.7</version>
+				<extensions>true</extensions>
+				<configuration>
+					<serverId>ossrh</serverId>
+					<nexusUrl>https://oss.sonatype.org/</nexusUrl>
+					<autoReleaseAfterClose>true</autoReleaseAfterClose>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>3.2.0</version>
+				<executions>
+					<execution>
+						<id>attach-javadocs</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-gpg-plugin</artifactId>
+				<version>1.6</version>
+				<executions>
+					<execution>
+						<id>sign-artifacts</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>sign</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
 </project>

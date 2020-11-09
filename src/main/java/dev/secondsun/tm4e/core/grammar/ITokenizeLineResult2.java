@@ -19,7 +19,7 @@ package dev.secondsun.tm4e.core.grammar;
 /**
  * Result of the line tokenization2 API.
  *
- * @see https://github.com/Microsoft/vscode-textmate/blob/master/src/main.ts
+ * see https://github.com/Microsoft/vscode-textmate/blob/master/src/main.ts
  */
 public interface ITokenizeLineResult2 {
 

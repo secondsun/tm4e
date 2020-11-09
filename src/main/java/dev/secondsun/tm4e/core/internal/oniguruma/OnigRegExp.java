@@ -31,7 +31,7 @@ import org.joni.WarnCallback;
 
 /**
  *
- * @see https://github.com/atom/node-oniguruma/blob/master/src/onig-reg-exp.cc
+ * see https://github.com/atom/node-oniguruma/blob/master/src/onig-reg-exp.cc
  *
  */
 public class OnigRegExp {

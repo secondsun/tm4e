@@ -33,7 +33,7 @@ public class RGBColorImpl extends CSSValueImpl implements RGBColor {
 
 	/*
 	 * (non-Javadoc)
-	 * @see org.w3c.dom.css.RGBColor#getRed()
+	 * see org.w3c.dom.css.RGBColor#getRed()
 	 */
 	public CSSPrimitiveValue getRed() {
 		return red;
@@ -41,7 +41,7 @@ public class RGBColorImpl extends CSSValueImpl implements RGBColor {
 
 	/*
 	 * (non-Javadoc)
-	 * @see org.w3c.dom.css.RGBColor#getGreen()
+	 * see org.w3c.dom.css.RGBColor#getGreen()
 	 */
 	public CSSPrimitiveValue getGreen() {
 		return green;
@@ -49,7 +49,7 @@ public class RGBColorImpl extends CSSValueImpl implements RGBColor {
 
 	/*
 	 * (non-Javadoc)
-	 * @see org.w3c.dom.css.RGBColor#getBlue()
+	 * see org.w3c.dom.css.RGBColor#getBlue()
 	 */
 	public CSSPrimitiveValue getBlue() {
 		return blue;
@@ -57,7 +57,7 @@ public class RGBColorImpl extends CSSValueImpl implements RGBColor {
 
 	/*
 	 * (non-Javadoc)
-	 * @see org.w3c.dom.css.CSSValue#getRGBColorValue()
+	 * see org.w3c.dom.css.CSSValue#getRGBColorValue()
 	 */
 	public RGBColor getRGBColorValue() throws DOMException {
 		return this;
@@ -65,7 +65,7 @@ public class RGBColorImpl extends CSSValueImpl implements RGBColor {
 
 	/*
 	 * (non-Javadoc)
-	 * @see org.w3c.dom.css.CSSValue#getPrimitiveType()
+	 * see org.w3c.dom.css.CSSValue#getPrimitiveType()
 	 */
 	public short getPrimitiveType() {
 		return CSS_RGBCOLOR;
@@ -73,7 +73,7 @@ public class RGBColorImpl extends CSSValueImpl implements RGBColor {
 	
 	/*
 	 * (non-Javadoc)
-	 * @see org.w3c.dom.css.CSSValue#getCssText()
+	 * see org.w3c.dom.css.CSSValue#getCssText()
 	 */
 	public String getCssText() {
 		return "rgb(" + red.getCssText() + ", " + green.getCssText() + ", "

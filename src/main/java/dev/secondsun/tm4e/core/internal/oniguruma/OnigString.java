@@ -27,7 +27,7 @@ import org.jcodings.specific.UTF8Encoding;
 /**
  * Oniguruma string.
  *
- * @see https://github.com/atom/node-oniguruma/blob/master/src/onig-string.cc
+ * see https://github.com/atom/node-oniguruma/blob/master/src/onig-string.cc
  *
  */
 public class OnigString {

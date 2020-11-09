@@ -21,7 +21,7 @@ import java.util.Collection;
 /**
  * TextMate grammar API.
  * 
- * @see https://github.com/Microsoft/vscode-textmate/blob/master/src/main.ts
+ * see https://github.com/Microsoft/vscode-textmate/blob/master/src/main.ts
  *
  */
 public interface IGrammar {

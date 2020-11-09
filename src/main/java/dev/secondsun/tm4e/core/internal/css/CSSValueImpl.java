@@ -25,7 +25,7 @@ public abstract class CSSValueImpl implements CSSPrimitiveValue, CSSValue {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see org.w3c.dom.css.CSSValue#getCssText()
+	 * see org.w3c.dom.css.CSSValue#getCssText()
 	 */
 	public String getCssText() {
 		// TODO Auto-generated method stub
@@ -35,7 +35,7 @@ public abstract class CSSValueImpl implements CSSPrimitiveValue, CSSValue {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see org.w3c.dom.css.CSSValue#getCssValueType()
+	 * see org.w3c.dom.css.CSSValue#getCssValueType()
 	 */
 	public short getCssValueType() {
 		return CSS_PRIMITIVE_VALUE;
@@ -44,7 +44,7 @@ public abstract class CSSValueImpl implements CSSPrimitiveValue, CSSValue {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see org.w3c.dom.css.CSSValue#setCssText(java.lang.String)
+	 * see org.w3c.dom.css.CSSValue#setCssText(java.lang.String)
 	 */
 	public void setCssText(String cssText) throws DOMException {
 		// TODO Auto-generated method stub
@@ -56,7 +56,7 @@ public abstract class CSSValueImpl implements CSSPrimitiveValue, CSSValue {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see org.w3c.dom.css.CSSPrimitiveValue#getPrimitiveType()
+	 * see org.w3c.dom.css.CSSPrimitiveValue#getPrimitiveType()
 	 */
 	public short getPrimitiveType() {
 		// TODO Auto-generated method stub
@@ -66,7 +66,7 @@ public abstract class CSSValueImpl implements CSSPrimitiveValue, CSSValue {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see org.w3c.dom.css.CSSPrimitiveValue#getCounterValue()
+	 * see org.w3c.dom.css.CSSPrimitiveValue#getCounterValue()
 	 */
 	public Counter getCounterValue() throws DOMException {
 		throw new DOMException(DOMException.INVALID_ACCESS_ERR, "COUNTER_ERROR");
@@ -75,7 +75,7 @@ public abstract class CSSValueImpl implements CSSPrimitiveValue, CSSValue {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see org.w3c.dom.css.CSSPrimitiveValue#getRGBColorValue()
+	 * see org.w3c.dom.css.CSSPrimitiveValue#getRGBColorValue()
 	 */
 	public RGBColor getRGBColorValue() throws DOMException {
 		throw new DOMException(DOMException.INVALID_ACCESS_ERR, "RGBCOLOR_ERROR");
@@ -84,7 +84,7 @@ public abstract class CSSValueImpl implements CSSPrimitiveValue, CSSValue {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see org.w3c.dom.css.CSSPrimitiveValue#getRectValue()
+	 * see org.w3c.dom.css.CSSPrimitiveValue#getRectValue()
 	 */
 	public Rect getRectValue() throws DOMException {
 		throw new DOMException(DOMException.INVALID_ACCESS_ERR, "RECT_ERROR");
@@ -93,7 +93,7 @@ public abstract class CSSValueImpl implements CSSPrimitiveValue, CSSValue {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see org.w3c.dom.css.CSSPrimitiveValue#getStringValue()
+	 * see org.w3c.dom.css.CSSPrimitiveValue#getStringValue()
 	 */
 	public String getStringValue() throws DOMException {
 		// TODO Auto-generated method stub
@@ -103,7 +103,7 @@ public abstract class CSSValueImpl implements CSSPrimitiveValue, CSSValue {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see org.w3c.dom.css.CSSPrimitiveValue#setFloatValue(short, float)
+	 * see org.w3c.dom.css.CSSPrimitiveValue#setFloatValue(short, float)
 	 */
 	public void setFloatValue(short arg0, float arg1) throws DOMException {
 		// TODO Auto-generated method stub
@@ -113,7 +113,7 @@ public abstract class CSSValueImpl implements CSSPrimitiveValue, CSSValue {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see org.w3c.dom.css.CSSPrimitiveValue#setStringValue(short,
+	 * see org.w3c.dom.css.CSSPrimitiveValue#setStringValue(short,
 	 * java.lang.String)
 	 */
 	public void setStringValue(short arg0, String arg1) throws DOMException {

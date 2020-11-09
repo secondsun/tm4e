@@ -23,7 +23,7 @@ import dev.secondsun.tm4e.core.internal.types.IRawGrammar;
 /**
  * TextMate grammar repository API.
  *
- * @see https://github.com/Microsoft/vscode-textmate/blob/master/src/grammar.ts
+ * see https://github.com/Microsoft/vscode-textmate/blob/master/src/grammar.ts
  *
  */
 public interface IGrammarRepository {
