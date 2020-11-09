@@ -3,7 +3,7 @@
 	<groupId>dev.secondsun</groupId>
 	<artifactId>org.eclipse.tm4e.core</artifactId>
 	<packaging>jar</packaging>
-	<version>0.4.6</version>
+	<version>0.4.7-SNAPSHOT</version>
 	<name>${project.groupId}:${project.artifactId}</name>
 
 	<description>This is a library that provides typemate parsing for java. Forked from github.com/eclipse/tm4e
@@ -41,7 +41,7 @@
 		<connection>scm:git:git://github.com/secondsun/tm4e.git</connection>
 		<developerConnection>scm:git:ssh://git@github.com/secondsun/tm4e.git</developerConnection>
 		<url>http://github.com/secondsun/tm4e/tree/prototype</url>
-		<tag>org.eclipse.tm4e.core-0.4.6</tag>
+		<tag>org.eclipse.tm4e.core-0.4.2</tag>
 	</scm>
 
 	<dependencies>
