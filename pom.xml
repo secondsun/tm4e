@@ -3,7 +3,7 @@
   <groupId>dev.secondsun</groupId>
   <artifactId>org.eclipse.tm4e.core</artifactId>
   <packaging>jar</packaging>
-  <version>0.4.2</version>
+  <version>0.4.3-SNAPSHOT</version>
   
 	<properties>
 		<maven.compiler.source>15</maven.compiler.source>
