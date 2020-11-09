@@ -9,6 +9,26 @@
 		<maven.compiler.source>15</maven.compiler.source>
 		<maven.compiler.target>15</maven.compiler.target>
 	</properties>
+	<licenses>
+        <license>
+            <name>Eclipse Public License v1.0</name>
+            <url>https://github.com/secondsun/tm4e/blob/master/LICENSE</url>
+        </license>
+    </licenses>
+    <developers>
+        <developer>
+            <name>Summers Pittman</name>
+            <email>secondsun@gmail.com</email>
+            <organization>MeMyselfAndI</organization>
+            <organizationUrl>https://github.com/secondsun</organizationUrl>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/secondsun/tm4e.git</connection>
+        <developerConnection>scm:git:ssh://github.com:secondsun/tm4e.git</developerConnection>
+        <url>http://github.com/secondsun/tm4e/tree/prototype</url>
+    </scm>
 
   <dependencies>
 		<dependency>
