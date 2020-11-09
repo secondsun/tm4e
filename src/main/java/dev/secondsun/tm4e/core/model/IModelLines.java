@@ -30,14 +30,14 @@ public interface IModelLines {
 	/**
 	 * Remove the line at specified index line.
 	 *
-	 * @param line (0-based)
+	 * @param lineIndex (0-based)
 	 */
 	void removeLine(int lineIndex);
 
 	/**
 	 * Mark as line is updated.
 	 *
-	 * @param line (0-based)
+	 * @param lineIndex (0-based)
 	 */
 	void updateLine(int lineIndex);
 
@@ -60,7 +60,7 @@ public interface IModelLines {
 
 	/**
 	 *
-	 * @param line (0-based)
+	 * @param lineIndex (0-based)
 	 * @return
 	 * @throws Exception
 	 */

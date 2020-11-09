@@ -12,7 +12,7 @@
  *
  * Contributors:
  *  - Microsoft Corporation: Initial code, written in TypeScript, licensed under MIT license
- *  - Angelo Zerr <angelo.zerr@gmail.com> - translation and adaptation to Java
+ *  - Angelo Zerr angelo.zerr@gmail.com - translation and adaptation to Java
  */
 package dev.secondsun.tm4e.core.grammar;
 
@@ -75,7 +75,7 @@ public interface IGrammar {
 	 *  - font style
 	 *  - foreground color
 	 *  - background color
-	 * e.g. for getting the languageId: `(metadata & MetadataConsts.LANGUAGEID_MASK) >>> MetadataConsts.LANGUAGEID_OFFSET`
+	 * e.g. for getting the languageId
 	 */
 	ITokenizeLineResult2 tokenizeLine2(String lineText);
 	
@@ -87,7 +87,7 @@ public interface IGrammar {
 	 *  - font style
 	 *  - foreground color
 	 *  - background color
-	 * e.g. for getting the languageId: `(metadata & MetadataConsts.LANGUAGEID_MASK) >>> MetadataConsts.LANGUAGEID_OFFSET`
+	 * e.g. for getting the languageId
 	 */
 	ITokenizeLineResult2 tokenizeLine2(String lineText, StackElement prevState);
 	
