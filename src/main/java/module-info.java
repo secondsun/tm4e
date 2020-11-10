@@ -1,7 +1,7 @@
 open module dev.secondsun.tm4e.core {
     requires java.logging;
     requires transitive org.jruby.jcodings;
-    requires org.jruby.joni;
+    requires transitive org.jruby.joni;
     requires jdk.xml.dom;
     requires com.google.gson;
     requires xml.apis.ext;
