@@ -1,10 +1,10 @@
 open module dev.secondsun.tm4e.core {
     requires java.logging;
-    requires org.jruby.jcodings;
+    requires transitive org.jruby.jcodings;
     requires org.jruby.joni;
-    requires xml.apis.ext;
     requires jdk.xml.dom;
-    requires gson;
+    requires com.google.gson;
+    requires xml.apis.ext;
 
     exports dev.secondsun.tm4e.core.grammar;
 
